@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <SwitchPreference
+        android:id="@+id/mode_switch"
+        android:key="silent_breaker_switch"
+        android:summary="turn on or off"
+        android:title="Silent Breaker Mode"
+        android:enabled="false"/>
+
+    <Preference
+        android:key="permissions"
+        android:title="Permissions"
+        android:summary="necessary permissions for the app" />
+
+    <PreferenceCategory android:title="Basic Settings">
+
+        <EditTextPreference
+            android:padding="10dp"
+            android:backgroundTint="@color/text_color"
+            android:background="@drawable/shape"
+            android:id="@+id/number_of_calls"
+            android:key="number_of_calls_editText"
+            android:summary="after these number of calls,silent mode will be broken"
+            android:title="Number of Calls"
+            android:inputType="number"
+            android:defaultValue="3"/>
+
+        <EditTextPreference
+            android:padding="10dp"
+            android:background="@drawable/shape"
+            android:backgroundTint="@color/text_color"
+            android:key="time_interval_editText"
+            android:summary="time interval between the calls"
+            android:title="Time Interval"
+            android:hint="in minutes unit"
+            android:inputType="number"
+            android:defaultValue="10"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Advanced Settings">
+
+        <EditTextPreference
+            android:padding="10dp"
+            android:background="@drawable/shape"
+            android:backgroundTint="@color/text_color"
+            android:key="special_number_editText"
+            android:title="Special Number"
+            android:summary="silent mode will always be disabled for this number"
+            android:inputType="number"/>
+
+    </PreferenceCategory>
+</PreferenceScreen>

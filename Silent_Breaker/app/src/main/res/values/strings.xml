@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Silent Breaker</string>
+    <string name="help_heading">Silent Breaker breaks the silent mode after a specific number of calls from a caller.The silent mode remains disabled for that number only!</string>
+    <string name="number_of_calls">Number of calls: </string>
+    <string name="number_of_calls_help">"<b>"Number of calls:"</b>" The minimum number of calls that a caller needs to make to break silent mode of this phone.</string>
+    <string name="time_interval">Time interval: </string>
+    <string name="time_interval_help">"<b>"Time interval:"</b>"The caller has to exceed the specified number of calls within this time to make your phone ring.The input should be in minutes unit.</string>
+    <string name="special_number">Special number: </string>
+    <string name="special_number_help">"<b>"Special number:"</b>"Silent mode will always be disabled for this number.</string>
+
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="about_activity_title">About</string>
+    <string name="help_activity_title">Help</string>
+
+    <string name="first_run_dialog_message">This is the first time running the app.\n
+        Do you want to read the manual first?</string>
+    <string name="first_run_dialog_title">Welcome!</string>
+</resources>
